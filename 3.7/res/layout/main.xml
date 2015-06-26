@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.test_demo.MainActivity$PlaceholderFragment" >
+    
+    <LinearLayout 
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="用户名"/>
+        <EditText 
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的用户名"
+            android:textSize="14dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout       
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="密码"/>
+        <EditText 
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            android:textSize="14dp" />
+        
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="登录"/>
+    <Button 
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="注册"/>
+    
+    
+    <LinearLayout 
+        android:id="@+id/server_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/register"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="服务器IP:"/>
+        <EditText 
+            android:id="@+id/edit_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout       
+        android:id="@+id/server_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/server_ip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="服务器端口:"/>
+        <EditText 
+            android:id="@+id/edit_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp" />
+        
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>
